@@ -6,29 +6,6 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (min-width: 1300px) {
-    #main-doc{
-        position: relative;
-        margin-left: 310px;
-        padding: 20px;
-        margin-bottom: 110px;
-    }
-      
-
-    #header-cabecalho {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        border-right: 3px solid grey ;
-    }
-
-    nav#navbar{
-        height: 670px !important;
-        overflow-y: scroll !important;
-    }
-
-}
-
 header h1#titulo-doc {
     padding: -20px;
     text-align: center;
@@ -41,10 +18,14 @@ header a {
     line-height: 34px;
     color: gray;
     padding: 10px;
-    text-indent: 30px;
     text-decoration: none;
     border-bottom: 1px solid black;
     border-collapse: collapse;    
+}
+
+header a:hover {
+    color: blue;
+    font-weight: bold;
 }
 
 nav#navbar{
@@ -87,5 +68,28 @@ a, p, li, code {
 }
 
 #reference {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #main-doc{
+        position: relative;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+    }
+      
+
+    #header-cabecalho {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        border-right: 3px solid grey ;
+    }
+
+    nav#navbar{
+        height: 670px !important;
+        overflow-y: scroll !important;
+    }
+
 }
